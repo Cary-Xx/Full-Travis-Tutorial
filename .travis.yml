@@ -5,4 +5,12 @@ jdk:
   - oraclejdk11
 
 script:
-  mvn -Dtest=SUTTest -e
+  mvn -Dtest=SUTTest test -e
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  on:
+    branch: master

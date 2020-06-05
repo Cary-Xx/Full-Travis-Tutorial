@@ -1,6 +1,6 @@
 public class SUT {
 
-    public int stringConcatenation(String s1, String s2) throws Exception {
+    public int stringConcatenation(String s1, String s2) throws IllegalArgumentException {
         String res = s1.concat(s2);
 
         if (res.length() < 3) {
