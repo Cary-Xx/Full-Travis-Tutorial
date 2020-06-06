@@ -4,6 +4,9 @@ sudo: false
 jdk:
   - oraclejdk11
 
+install:
+  mvn clean install -DskipTests=true
+
 script:
   mvn -Dtest=SUTTest test -e
 
