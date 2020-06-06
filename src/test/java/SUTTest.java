@@ -11,7 +11,7 @@ public class SUTTest {
         String s2 = "";
         SUT sut = new SUT();
         int result = sut.stringConcatenation(s1, s2);
-        assertEquals(result, 1);
+        assertEquals(result, 2);
     }
 
     @Test(expected = NullPointerException.class)
